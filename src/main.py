@@ -16,18 +16,18 @@ parser.add_argument('--train_epoch', type=int, default=2)
 parser.add_argument('--display_step', type=int, default=1)
 parser.add_argument('--lr', type=float, default=1e-3)
 parser.add_argument('--optimizer_method', choices=['Adam','Adadelta','Adagrad','RMSProp','GradientDescent','Momentum'],default='Adam')
-parser.add_argument('--keep_prob', type=float, default=0.9)
+parser.add_argument('--keep_prob', type=float, default=1.0)
 parser.add_argument('--a', type=float, default=1)
 parser.add_argument('--b', type=float, default=0)
 parser.add_argument('--grad_clip', choices=['True', 'False'], default='True')  # True
 parser.add_argument('--batch_normalization', choices=['True','False'], default = 'False')
 
-parser.add_argument('--hidden_neuron', type=int, default=10)
+parser.add_argument('--hidden_neuron', type=int, default=50)
 parser.add_argument('--corruption_level', type=float, default=0.3)
 parser.add_argument('--lambda_value', type=float, default=0.001)
 
-parser.add_argument('--f_act', choices=['Sigmoid','Relu','Elu','Tanh',"Identity"], default = 'Relu')
-parser.add_argument('--g_act', choices=['Sigmoid','Relu','Elu','Tanh',"Identity"], default = 'Relu')
+parser.add_argument('--f_act', choices=['Sigmoid','Relu','Elu','Tanh',"Identity"], default = 'Sigmoid')
+parser.add_argument('--g_act', choices=['Sigmoid','Relu','Elu','Tanh',"Identity"], default = 'Sigmoid')
 
 parser.add_argument('--encoder_method', choices=['SDAE','VAE'],default='SDAE')
 
