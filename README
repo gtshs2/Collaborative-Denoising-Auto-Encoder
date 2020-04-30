@@ -9,7 +9,7 @@ politic_old : made by Yupeng Gu
 (Gu, Y., Sun, Y., Jiang, N., Wang, B., & Chen, T. (2014, August). Topic-factorized ideal point estimation model for legislative voting network. In Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining (pp. 183-192). ACM.)
 1990~2013 legislative rollcall dataset (THOMAS)
 
-politic_new : made by Kyungwoo Song (under the review paper)
+politic_new : made by Kyungwoo Song (Neural Ideal Point Estimation Network (AAAI-18))
 1990~2016 legislative rollcall dataset (from Govtrack.com)
 
 You can download politic_old from https://github.com/gtshs2/NIPEN/tree/master/data/politic_old
